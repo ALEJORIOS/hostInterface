@@ -1,0 +1,42 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    place-content: center;
+    .content {
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+        justify-self: end;
+        .title {
+            font-size: 3rem;
+            font-weight: 600;
+            font-family: Outfit;
+        }
+        .sub {
+            margin-top: 1rem;
+            color: #B0B0B0;
+        }
+        .buttons {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.6rem;
+            button {
+                border: none;
+                outline: none;
+                padding: 6px 12px;
+                font-size: 0.7rem;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .start {
+                background-color: #1c1c84;
+                color: #FAFAF9;
+            }
+            .more {
+                background-color: #E6E7E9;
+            }
+        }
+    }
+}
