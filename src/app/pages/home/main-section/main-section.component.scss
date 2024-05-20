@@ -1,9 +1,11 @@
+@import '../../../../assets/scss/variables.scss';
 .main {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - $nav-height);
     display: grid;
     grid-template-columns: 3fr 2fr;
     place-content: center;
+    background-color: #FDFAFF;
     .content {
         display: flex;
         flex-direction: column;
@@ -28,6 +30,7 @@
                 padding: 6px 12px;
                 font-size: 0.7rem;
                 border-radius: 4px;
+                font-weight: 600;
                 cursor: pointer;
             }
             .start {
@@ -35,7 +38,7 @@
                 color: #FAFAF9;
             }
             .more {
-                background-color: #E6E7E9;
+                background-color: #EAEAEC;
             }
         }
     }

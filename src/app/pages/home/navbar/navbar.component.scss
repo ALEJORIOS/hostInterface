@@ -1,0 +1,28 @@
+@import '../../../../assets/scss/variables.scss';
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    padding-left: 0.5rem;
+    border-bottom: 1px solid #F0F0F0;
+    background-color: #FEFEFF;
+    height: $nav-height;
+    .logo {
+        font-family: ColorTube;
+        font-size: 0.7rem;
+        user-select: none;
+        color: $primary;
+    }
+    .routes {
+        display: flex;
+        gap: 1rem;
+        a{
+            font-size: 0.75rem;
+            color: $primary;
+            opacity: 0.75;
+            font-weight: 600;
+        }
+    }
+}
